@@ -1,0 +1,1366 @@
+<script>
+    window.addEventListener("DOMContentLoaded", function() {
+        document.querySelector("section .ingaia-capital-template h1").classList.add("title-bancos-h1");
+        document.querySelector("section .ingaia-capital-template h1").classList.add("bancos-title");
+        document.querySelector("section .ingaia-capital-template h1").classList.add("white");
+        var title = document.getElementsByClassName('title-bancos-h1 white bancos-title');
+        title[0].innerHTML = 'Simule agora o financiamento do seu Compacto';
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        document.querySelector("body div .widget-ingaia-capital").classList.add("background-bancos");
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        document.querySelector("body div section .ingaia-capital-template .box-inner").classList.add("box-bancos");
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".box-bancos").after(`
+            <img class="img-bro" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/66bec799e819c6039d2bfd0b414076b0-personagem.png" />
+        `)
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".background-bancos").after(`
+        <section class="background-white bancos-bloco2">
+            <div class="container background">
+                <div class="row ">
+                    <div class="ingaia-capital-template">
+                        <div class="col-md-12 margin">
+                            <h1 class="title-bancos-h1 roxo">Sem dores de cabeça com o financiamento</h1>
+                            <div class="col-md-8 content-div-text">
+                                <p class="content-text">
+                                    Queremos <span>desburocratizar toda a compra do seu Apê</span>, sendo assim, a
+                                    Lounge te dará suporte com a nossa equipe de finanças do começo ao fim do
+                                    processo.
+                                </p>
+                                <p class="content-text">
+                                    Falando de financiamento, a taxa de Juros é a menor já vista, assim as parcelas do
+                                    financiamento sairão mais baratas que a mensalidade do aluguel! Eae, bora ser
+                                    Compacto?
+                                </p>
+                            </div>
+                            <div class="col-md-8 content-div-text"></div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>`);
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $("#home").after(`<div class="lgpd">
+      <div class="lgpd-container">
+        <div id=" " class="lgpd-msg"> Utilizamos cookies essenciais e tecnologias semelhantes de acordo com a nossa <a href="/politica-de-privacidade" target="_blank" class="">Política de Privacidade</a> e, ao continuar navegando, você concorda com estas condições. </div>
+        <div class="lgpd-button-container"> <button class="lgpd-btn">OK</button> </div>
+      </div>
+    </div>`);
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        const btnLGPD = document.querySelector('.lgpd-btn');
+        const boxLGPD = document.querySelector('.lgpd');
+        console.log(btnLGPD);
+    
+        if(localStorage.lbpd){
+            boxLGPD.style.display = 'none';
+        }
+        btnLGPD.addEventListener('click', function(){
+        localStorage.setItem("lbpd", 'ok');
+        boxLGPD.style.display = 'none';
+        })
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".background-white").after(`
+            <section class="banco-itens" style="background-color: #5e17eb;">
+            <div class="col-md-12" style="background-color:#5e17eb;">
+                                <div class="col-md-4 img-holder">
+                                    <img src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/6263261976e7cfb43dfdb9f7bc421622-imgb1.png" />
+                                    <h3>Ajudamos você
+                                    em todo o processo
+                                    de venda/locação</h3>
+                                </div>
+                                <div class="col-md-4 img-holder">
+                                    <img src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/19e8f51ec0ab3b7b42514b9bd41d79c5-imgb2.png">
+                                    <h3> Profissionais
+                                    especialistas irão
+                                    te atender</h3>
+                                </div>
+                                <div class="col-md-4 img-holder">
+                                    <img src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/786ee49937012551d10b38aedba07f8b-imgb3.png">
+                                    <h3>Você satisfeito com
+                                    a rentabilidade do
+                                    seu Compacto</h3>
+                                </div>
+                            </div>
+            </section>`);
+    })
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        document.querySelector("h1").classList.add("title-bancos-h1");
+        document.querySelector("h1").classList.add("roxo");
+        document.querySelector(".form-contact-template .box-inner").classList.add("contact-form")
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        var title = document.getElementsByClassName('menu-top premium');
+        title[0].innerHTML = `
+        <a href="javascript:;" aria-label="Menu" class="close-menu roxo">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30 10L10 30" class="close-icon" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M10 10L30 30" class="close-icon" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </a>
+        <a href="javascript:;" class="close-menu-top close-menu"></a>
+    
+        <div class="new-menu">
+            <div class="menu-screen">
+                <div class="row-menu">
+                    <div class="flex-item" ><a href="/encomende-seu-imovel">Encontre seu Apê Compacto</a></div>
+                    <div class="flex-item" style="margin-left: 10%;"><a href="/cadastre-seu-imovel">Cadastre seu Compacto</a></div>
+                    <div class="flex-item" style="margin-left: 9%;"><a href="/financiamento-e-bancos">Financiamento e Bancos</a></div>
+                    <div class="flex-item" style="margin-left: 28%;"><a href="/fale-conosco">Fale Conosco</a></div>
+                    <div class="flex-item" style="margin-left: 33%;"><a href="/quem-somos">Sobre Nós</a></div>
+                    <div class="flex-item" style="margin-left: 7%;"><a href="/seja-um-corretor-parceiro">Seja um Corretor Parceiro</a></div>
+                    <div class="flex-item" style="margin-left: 26%;"><a href="/kit-decoracao">Kit Decoração</a></div>
+                    <div class="flex-item" style="margin-left: 29%;"><a href="/investidores">Investidores</a></div>
+                    <div class="flex-item" style="margin: 0 auto;"><a href="/feedbacks">Loungers</a></div>
+
+                </div>
+            </div>
+        </div>`;
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        var arrFiltered = document.querySelectorAll("div .menu-top-flat ul li a");
+        arrFiltered.forEach(function(el) {
+            el.classList.add("captalize");
+        });
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".widget-showcase").before(`
+            <div style="background-color: #5e17eb; margin-top: 170px; padding-bottom: 40px">
+                <div class="container bloco-home">
+                    <div class="row">
+                        <div class="content-choices">
+                            <div class="choices-home sombra" style="margin-top: -80px;">
+                                <a href="/imoveis/a-venda?preco-de-venda=200000~400000">
+                                    <img style="margin-top: 40px;" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/a5b8661fdeafcc93d8b2ebb71583b3d3-img1.png" width="15%"/>
+                                    <div class="flex-item-choices" style="margin-left: 35px;margin-top: 15px;margin-bottom: -15px;">Meu 1 Apê</div><br>
+                                    <p style="color: gray;">Todos compactos em um só clique!</p>
+                                </a>
+                            </div>
+                            <div class="choices-home sombra" style="margin-top: -80px;">
+                                <a href="/quem-somos">
+                                    <img style="margin-top: 50px;" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/a737477cad02f5598a0d18a9a4364871-img2.png" width="15%"/>
+                                    <div class="flex-item-choices" style="margin-left: 35px;margin-top: 15px;margin-bottom: -15px;">Sobre Nós</div><br>
+                                    <p style="color: gray;">Dá uma stalkeada</p>
+                                </a>
+                            </div>
+                            <div class="choices-home sombra" style="margin-top: -80px;">
+                                <a href="imoveis/para-alugar">
+                                    <img style="margin-top: 45px;" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/8d8a94ed19f9fa7871cba12aec775503-img3.png" width="15%"/>
+                                    <div class="flex-item-choices" style="margin-left: 18px;margin-top: 15px;margin-bottom: -15px;">Apês p/ Locação</div><br>
+                                    <p style="color: gray;">Pensando em se mudar?</p>
+                                </a>
+                            </div>
+                            <div class="choices-home sombra" style="margin-top: -80px;">
+                                <a href="/feedbacks">
+                                    <img style="margin-top: 45px;" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/afe4a1aee98e483877a61b8b0b34cf71-img4.png" width="15%"/>
+                                    <div class="flex-item-choices" style="margin-left: 40px;margin-top: 15px;margin-bottom: -15px;">Loungers</div><br>
+                                    <p style="color: gray;">Saiba o que nossos clientes falam da Lounge</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content-choices choices-bloco-b">
+                            <div class="choices-home sombra">
+                                <a href="/seja-um-corretor-parceiro">
+                                    <img style="margin-top: 40px;" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/8846126ec25dc74704c662f21a83747e-Estrela.png" width="15%"/>
+                                    <div class="flex-item-choices" style="margin-left: 40px;margin-top: 15px;margin-bottom: -15px;">Parceiros</div><br>
+                                    <p style="color: gray;">Corretor, traga seus clientes para viver compacto</p>
+                                </a>
+                            </div>
+                            <div class="choices-home sombra">
+                                <a href="/investidores">
+                                    <img style="margin-top: 40px;" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/442dfbd4cd95de141b48634f863b45f8-img6.png" width="20%"/>
+                                    <div class="flex-item-choices" style="margin-left: 25px;margin-top: 20px;margin-bottom: -15px;">Investidores</div><br>
+                                    <p style="color: gray;">Por que investir em compactos?</p>
+                                </a>
+                            </div>
+                            <div class="choices-home sombra">
+                                <a href="/kit-decoracao">
+                                    <img style="margin-top: 40px;" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/3b264b5c7752029d819a6c3a95e9fdac-img7.png" width="20%"/>
+                                    <div class="flex-item-choices" style="margin-left: 15px;margin-top: 15px;margin-bottom: -15px;">Kit Decoração</div><br>
+                                    <p style="color: gray;">Apês decorados para você</p>
+                                </a>
+                            </div>
+                            <div class="choices-home sombra" >
+                                <a href="https://www.instagram.com/lounge.161/?hl=pt-br" target=”_blank” >
+                                    <img style="margin-top: 35px;" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/597a68f3859c5a6b63055247c9ea538d-img8.png" width="20%"/>
+                                    <div class="flex-item-choices" style="margin-left: 35px;margin-top: 15px;margin-bottom: -15px;">Instagram</div><br>
+                                    <p style="color: gray;">Conteúdos incríveis por aqui!</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`);
+    });
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".showcase-template-05").after(`
+            <section style="background-color: #5e17eb;">
+                <div style="background-color: #5e17eb; margin-top: 170px;">
+                    <div class="container">
+                        <div class="row" style="align-itens: center;">
+                            <div>
+                                <h3 class="title-bancos-h1 white" style="position: relative; top: 10px; margin-left: 35%;"> Quero receber novidades </h3>
+                                <input style="margin-left: 23%;" class="roxo" placeholder="Whatsapp" type="text" id="whatsapp-" name="whatsapp"/>
+                                <input style="margin-left: 20px;" class="roxo" placeholder="Email" type="text" id="email-" name="email"/><br>
+                                <button style=" width: 630px; position: relative; top: 10px; margin-left: 23%;" class="title-bancos-h1 white" type="button">Enviar</button>
+                            <div>
+                        </div>
+                    </div>
+                </div>
+            </section>`);
+    })
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".showcase-template-10").after(`
+            <div>
+                <div class="container">
+                    <div class="row" style="align-itens: center;">
+                        <div>
+                            <h3 class="title-bancos-h1 roxo" style="position: relative;margin-left: 43%;"> Os Loungers </h3>
+                            <h3 class="roxo" style="position: relative;margin-left: 25%; color: #5e17eb;"> Depoimentos de quem já se tornou um Lounger:  </h3>
+                            <div class="content-choices">
+                                <div class="icon_loungers">
+                                    <p style="color: white; margin-top: 15px;font-size: 60px;"><</p>
+                                </div>
+                                <div class="choices loungers_box_lr">
+                                    <img style="margin-top: 40px;" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/85f484cf8e3bcaf5ffe31f16876b6291-img5.png" width="15%"/>
+                                    <p class="loungers_text_lr">A compra mais descomplicada que já vivi. Desde o primeiro atendimento, senti o compromisso e a experiência da Lounge.161, o que me deixou muito segura</p>
+                                    <h4 class="loungers_name_lr">Sibeli Martinez</h4>
+                                    <p class="loungers_profission_lr">Artista Plástica</p>
+                                </div>
+                                <div class="choices" style="height: 400px; width: 300px; border-radius: 20px; border-color: #5e17eb; border-style: solid; border-width: thin;  box-shadow: 0 0 1em gray;">
+                                    <img style="margin-top: 40px;" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/85f484cf8e3bcaf5ffe31f16876b6291-img5.png" width="15%"/>
+                                    <p style="color: gray; width: 80%; margin-left: 30px; margin-top: 70px;">A compra foi muito fácil. A Lounge me muniu de várias informações, o empreendimento é excelente, muito acima de outros que eu havia pesquisado.</p>
+                                    <h4 style="color: gray; width: 80%; margin-left: 30px">Simone Queiroz</h4>
+                                    <p style="color: gray; width: 90%; margin-left: 13px; margin-top: -20px;">Jornalista</p>
+                                </div>
+                                <div class="choices loungers_box_lr">
+                                    <img style="margin-top: 40px;" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/85f484cf8e3bcaf5ffe31f16876b6291-img5.png" width="15%"/>
+                                    <p class="loungers_text_lr">A experiência excelente... Não tinha absolutamente nenhum conhecimento de como funcionava a logística de comprar um Compacto. Me ajudaram muito!!</p>
+                                    <h4 class="loungers_name_lr">Dr. Victor Picchi</h4>
+                                    <p class="loungers_profission_lr">Médico</p>
+                                </div>
+                                <div class="icon_loungers">
+                                    <p style="color: white; margin-top: 15px;font-size: 60px;">></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`);
+    })
+    
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        var footerLocalizacao = document.getElementsByClassName('info-office');
+        footerLocalizacao[0].innerHTML = '';
+    
+        var financiamento = document.getElementsByClassName('widget-block');
+        financiamento[0].innerHTML = `
+                <section class="home-tel">
+            <div class="container background">
+                <div class="row ">
+                    <div class="ingaia-capital-template">
+                        <div class="col-md-12 margin">
+                            <h1 class="title-bancos-h1 white title-telefone">Telefones</h1>
+                            <div class="bloco-tel">                    
+                                <a href="https://api.whatsapp.com/send?phone=5511991153327" target="_blank" class="sobre-tel"><img class="img-whats" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/0850be1ad6aa47b66c28460806c8eccd-5ff34164ebf4b220afad4b4eb5136c7d-removebg-preview.png" style="width: 30px;">+55 (11) 99115-3327</a>
+                                <a href="https://api.whatsapp.com/send?phone=5511968436314" target="_blank" class="sobre-tel"><img class="img-whats" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/0850be1ad6aa47b66c28460806c8eccd-5ff34164ebf4b220afad4b4eb5136c7d-removebg-preview.png" style="width: 30px;">+55 (11) 96843-6314</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <section class="map-location" style="background-color: #5e17eb; height: 560px">
+                <div>
+                    <div class="container">
+                        <h3 id="anchor-map" class="title-bancos-h1 white" style="position: relative; top: 50px;"> Localização </h3>
+                        <div style="width:45%;float:left; border-radius: 20px">
+                            <iframe style="border-radius: 20px" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14623.92507621187!2d-46.6608874!3d-23.6050047!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57e00d492361%3A0xcaa3b4c937744792!2sR.%20Dr.%20Augusto%20de%20Miranda%2C%20800%20-%20Pompeia%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005026-000!5e0!3m2!1spt-BR!2sbr!4v1623976971253!5m2!1spt-BR!2sbr" width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div style="margin-left: 20px;width:49%;height: 80%;float:left; margin-top: 40px">
+                            <p style="color:#fff; font-weight: bold; margin-bottom:40px; font-size: 40px;margin-left: 30px;">
+                    Unidade Vila Pompeia
+                </p>
+                <p style="color:#fff; font-weight: 400; font-size: 30px;line-height:38px; margin-left: 30px;">
+                    Rua Doutor Augusto de Miranda <br>
+                    Nº 800 - Apê 202 - Ed. Tetrys
+                </p>
+                <p style="color:#fff; font-weight: 400; font-size: 30px;margin-top:50px; margin-left: 30px;">
+                    Vila Pompeia - São Paulo/SP
+                </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div style="margin-top: 40px;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="news">
+                                <h3 class="title-bancos-h1 roxo" style="font-weight: bold; margin: 0 auto; margin-bottom:30px; font-size: 20px;"> Quero receber novidades </h3>
+                                <form id="myform-whats" method="post" style="text-align:center;">
+                                <input style="border: 1px solid #5e17eb; margin: 0 10px;" class="white whitePlace" placeholder="Whatsapp" type="text" id="whatsapp" name="whatsapp"/>
+                                <input style="border: 1px solid #5e17eb; margin: 0 10px;" class="white whitePlace" placeholder="Email" type="text" id="email" name="email"/><br>
+                                <input style=" width: 632px; margin: 15px auto; display: block; font-weight: bold; font-size: 20px;" class="title-bancos-h1 roxo" id="btn-invest" type="button" value="Enviar" onclick="sendEmail()">                             
+                                 </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </section>
+            <section  class="bloco-final" style="background-color: white; margin-top: 50px; height: 420px">
+                <div style="width: 100%; display: block;">
+                    <div class="left-content" style="width:42%;height: 400px;background-color: #5e17eb;box-shadow: 0 0 1em gray;border-top-right-radius: 20px;border-bottom-right-radius: 20px; float:left;">
+                        <h3 class="title-bancos-h1 roxo" style=" margin-top:100px;font-weight: bold; padding-right:10px;position: relative;margin-left: 43%; border-style: solid;border-width: thin;font-size:20px"> Imóvel sob encomenda </h3>
+                        <p style="color: white; font-weight: bold; font-size: 20px;margin-left: 43%;">
+                            Descreva o Apê que você procura e
+                            nós avisaremos quando o encontrarmos.
+                        </p>
+                        <a href="/encomende-seu-imovel"><button style=" font-weight: bold; margin-left: 43%; width: 232px; position: relative;" class="title-bancos-h1 white" type="button">Encomende seu imóvel ></button></a>
+                    </div>
+                    <div class="center-content" style="width:15%;height: 400px;float:left; box-shadow: 0 0 1em gray; background-color: #5e17eb; border-radius: 20px; margin-left: 1%; margin-right: 1%;">
+                        <h3 class=" font-weight: bold; title-bancos-h1 roxo" style="margin-top:100px; padding:2px 10px;position: relative;margin-left: 5%; border-style: solid;border-width: thin;font-size:20px;"> Financiamento </h3>
+                        <p style="color: white; font-weight: bold; font-size: 20px; text-align:center; padding: 0 20px;">
+                            As melhores ofertas
+                            de crédito para você.
+                        </p>
+                        <a href="/financiamento-e-bancos"><button style=" font-weight: bold; display:block; margin:0 auto; width: 220px; position: relative;" class="title-bancos-h1 white" type="button">Faça uma simulação ></button></a>
+    
+                    </div>
+                    <div class="right-content" style="width: 41%;height: 400px;float:right;box-shadow: 0 0 1em gray;background-color: #5e17eb;border-top-left-radius: 20px;border-bottom-left-radius: 20px;">
+                        <h3 class="title-bancos-h1 roxo" style=" font-weight: bold;margin-top:100px; position: relative;margin-left: 70px; border-style: solid;border-width: thin;font-size:20px;"> Cadastre seu imóvel </h3>
+                        <p style="color: white; font-weight: bold; font-size: 20px; width: 300px; text-align: left;margin-left: 90px">
+                        Anuncie com a Lounge.161 e nós
+                        encontraremos o melhor negócio.
+                        </p>
+                        <a href="/cadastre-seu-imovel"><button style=" font-weight: bold; width: 230px; position: relative; margin-left: 70px;" class="title-bancos-h1 white" type="button">Cadastre seu imóvel > </button><a/>
+                    </div><br>
+                </div>
+            </section><br>
+        `;
+    })
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $("#home .widget-block .bloco-final").before(`
+        <div class="container" style="background-color:#5e17eb; padding-top:50px;max-width:100%;margin-top:30px;">
+                    <div>
+                        <div class="container" style="margin: 0 auto; width:80%;">
+                            <div class="row" style="align-itens: center;">
+                                <div>
+                                    <h1 class="title-bancos-h1 white feedback-h3" style="margin:0 auto;font-weight:600;font-size:26px;padding: 5px 20px;margin-bottom:30px;">Os Loungers</h1>
+                                    <h3 class="white-feedback" style="font-weight:600;text-align:center;color:#fff;margin-bottom: 50px;">Depoimentos de quem já se tornou um Lounger:</h3>
+                                    <div class="content-choices">
+                                        <div class="icon_loungers"> 
+                                            <button style="color: #5e17eb; margin-top: 34px;margin-left:-5px;font-size: 55px;" onclick="plusSlides(-1)">&lt;</p>
+                                        </div>
+                                        <div class="choices mySlides" style="display: block; height: 400px; width: 300px; border-radius: 20px; border-color: #5e17eb; border-style: solid; border-width: thin;  box-shadow: 0 0 1em gray;"><img style="width: 90px; margin-top:60px;" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/688f84665f56725936148600e2f41203-Foto%203.png" class="fr-dii fr-draggable feedback-img">
+                                            <p style="color: gray; width: 80%; margin-left: 30px; margin-top: 70px;">A compra mais descomplicada que já vivi. Desde o primeiro atendimento, senti o compromisso e a experiência da Lounge.161, o que me deixou muito segura</p>
+                                            <h4 style="color: gray; width: 80%; margin-left: 30px">Sibeli Martinez</h4>
+                                            <p class="p-feedback" style="color: gray; width: 90%; margin-left: 13px; margin-top: -20px;">Artista Plástica</p>
+                                        </div>
+                                        <div class="choices mySlides" style="height: 400px; width: 300px; border-radius: 20px; border-color: #5e17eb; border-style: solid; border-width: thin;  box-shadow: 0 0 1em gray;"><img style="width: 90px;" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/0d0a662f623d3bc997d4891b0411633b-Foto%202.png" class="fr-dii fr-draggable feedback-img">
+                                            <p style="color: gray; width: 80%; margin-left: 30px; margin-top: 70px;">A compra foi muito fácil. A Lounge me muniu de várias informações, o empreendimento é excelente, muito acima de outros que eu havia pesquisado.</p>
+                                            <h4 style="color: gray; width: 80%; margin-left: 30px">Simone Queiroz</h4>
+                                            <p class="p-feedback" style="color: gray; width: 90%; margin-left: 13px; margin-top: -20px;">Jornalista</p>
+                                        </div>
+                                        <div class="choices mySlides" style="height: 400px; width: 300px; border-radius: 20px; border-color: #5e17eb; border-style: solid; border-width: thin;  box-shadow: 0 0 1em gray;"><img style="width: 90px;" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/2afa5a081d04d522623f149fc2996399-Foto%201.png" class="fr-dii fr-draggable feedback-img">
+                                            <p style="color: gray; width: 80%; margin-left: 30px; margin-top: 70px;">A experiência excelente... Não tinha absolutamente nenhum conhecimento de como funcionava a logística de comprar um Compacto. Me ajudaram muito!!</p>
+                                            <h4 style="color: gray; width: 80%; margin-left: 30px">Dr. Victor Picchi</h4>
+                                            <p class="p-feedback" style="color: gray; width: 90%; margin-left: 13px; margin-top: -20px;">Médico</p>
+                                        </div>
+                                        <div class="icon_loungers">
+                                            <button style="color: #5e17eb; margin-top: 34px;margin-left:5px;font-size: 55px;" onclick="plusSlides(1)">></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+        `)
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".widget-institutional").after(`
+        <section class="sobre-bloco1">
+            <div class="container background">
+                <div class="row" style="margin-top:-40px;">
+                    <div class="ingaia-capital-template">
+                        <div class="col-md-12 margin">
+                            <h1 class="title-bancos-h1 roxo">Sobre a Lounge.161</h1>                    
+                            <div class="col-md-8 content-div-text">
+                            <p class="sobre-texto">Somos a primeira imobiliária focada em Apês Compactos, assim, temos uma atenção fanática pelos detalhes, nós materializamos sonhos para as pessoas viverem na plenitude o seu estilo de vida em São Paulo.</p>
+                            <p class="sobre-texto">Oferecemos o maior portfólio de Apês Compactos para você! Para quem está procurando comprar um Apê desse estilo para morar, ajudamos desde a escolha até a parte jurídica e financeira, porque queremos que você viva onde faz sentido na sua vida sem burocracia.</p>
+                            <p class="sobre-texto">Se o seu caso é investir em um Apê bem localizado e rentável, iremos te apresentar as melhores opções de acordo com o seu orçamento, resultando em uma liquidez e agilidade para alugar. Para completar os nossos serviços, temos parceria com escritórios de arquitetura oferecendo a decoração ideal para o seu Apê Compacto.</p>
+                            <p class="sobre-texto">Ajudamos as pessoas a encontrarem o espaço ideal em poucos M², perto de seus trabalhos e vida social, conciliando qualidade de vida e mobilidade em SP. Trazemos empreendimentos tecnológicos, bem localizados, rentáveis e que as áreas do condomínio sejam extensões do Apê. Eae bora ser Compacto com a Lounge.161?</p>
+                            </div>
+                            <div class="img-sobre">
+                            <img class="fr-dib fr-draggable about-img" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/c1377f7ab7858b72eac243789167c61d-sobre-nos-bg.png" style="width: 575px; height: 254.917px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>`);
+        $(".sobre-bloco1").after(`
+        <section class="sobre-bloco2" style="background-color:#5e17eb;">
+            <div class="container background">
+                <div class="row ">
+                    <div class="ingaia-capital-template">
+                        <div class="col-md-12 margin">
+                            <h1 class="title-bancos-h1 roxo">Hey, por que você deve ser um Lounger?</h1>
+                            <div class="alinhamento">                    
+                                <div class="col-md-8 content-div-text">
+                                    <img class="fr-dib fr-draggable img-num" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/bcb9c25efc4ddafd9f9067b3711667c7-num1.png" style="width: 60px;">
+                                </div>
+                                <p class="sobre-texto">Somos a primeira imobiliária focada em apartamentos compactos,então se está procurando um conte com a gente.</p>
+                                <a href="https://api.whatsapp.com/send?phone=5511991153327" target="_blank"><p class="sobre-links">Nos chame no Whatsapp ><p></a>
+                            </div>
+    
+                            <div class="alinhamento">                    
+                                <div class="col-md-8 content-div-text">
+                                    <img class="fr-dib fr-draggable img-num" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/35b836d4384d9082e4ca8f0c9d0b3dc8-num2.png" style="width: 60px;">
+                                </div>
+                                <p class="sobre-texto">Nossa equipe é especialista nesse segmento e temos o objetivo de humanizar todo o processo.</p>
+                                <a href="/fale-conosco"><p class="sobre-links">Entre em contato ><p></a>
+                            </div>
+    
+                            <div class="alinhamento">                    
+                                <div class="col-md-8 content-div-text">
+                                    <img class="fr-dib fr-draggable img-num" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/08124d29f9507570ebcab7d7db99d6f1-num3.png" style="width: 60px;">
+                                </div>
+                                <p class="sobre-texto">Portfólio completo de Apês Compactos em SP e uma comunidade que não para de crescer.</p>
+                                <a href="/investidores"><p class="sobre-links">Invista em um Compacto ><p></a>
+                            </div>
+    
+                            <div class="alinhamento">                    
+                                <div class="col-md-8 content-div-text">
+                                    <img class="fr-dib fr-draggable img-num" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/30dacd5a2f2edf5100b832d94a393369-num4.png" style="width: 60px;">
+                                </div>
+                                <p class="sobre-texto">Oferecemos serviço completo para você que está procurando um Apê pequeno em uma região privilegiada de SP.</p>
+                                <a href="/imoveis/a-venda"><p class="sobre-links">Conheça nossos Apês Compactos ><p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>`);
+        $(".sobre-bloco2").after(`
+        <section class="sobre-bloco3">
+            <div class="container background">
+                <div class="row ">
+                    <div class="ingaia-capital-template">
+                        <div class="col-md-12 margin">
+                            <h1 class="title-bancos-h1 roxo title-telefone">Telefones</h1>
+                            <div class="bloco-tel">                    
+                                <a href="https://api.whatsapp.com/send?phone=5511991153327" target="_blank" class="sobre-tel"><img class="img-whats" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/757fe1d6bdc48e00ff48910b837c1b5d-whatsapp-roxo-v2.png" style="width: 30px;">+55 (11) 99115-3327</a>
+                                <a href="https://api.whatsapp.com/send?phone=5511968436314" target="_blank" class="sobre-tel"><img class="img-whats" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/757fe1d6bdc48e00ff48910b837c1b5d-whatsapp-roxo-v2.png" style="width: 30px;">+55 (11) 96843-6314<a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>`);
+        $(".sobre-bloco3").after(`
+        <section class="sobre-bloco4" style="background-color:#5e17eb;">
+            <div class="container background">
+                <div class="row ">
+                    <div class="ingaia-capital-template">
+                        <div class="col-md-12 margin">
+                            <h1 class="title-bancos-h1 white">Juliana C. Pravatta</h1>
+                            <img class="fr-dib fr-draggable img-num img-founder" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/764b34cdb72e15b903ddd3ec8d32e6f7-founder.png" style="width: 280px;">
+                            <p>Fundadora e responsável criativa da Lounge.161, conhecida como a Compacta dos Compactos, atua no Mercado Imobiliário há mais de uma década. Feliz e inquieta, ficou incomodada com o <em>status quo</em> das imobiliárias tradicionais e decidiu criar um manifesto, 
+     trazendo clareza a um novo estilo de vida urbano e incentivando pessoas a serem protagonistas da sua própria história. Ela diz: - <i>"Não é sobre o tamanho do seu apê, mas quantos m² sua liberdade precisa ter para compor a sua real história!".</i></p>
+                            <p>Nasce assim a L.161, uma imobiliária especializada em Apês Compactos!<br>
+                            Aqui o seu mundo se encaixa!</p>
+                            <p><i>"Sim, vendemos exatamente o que vivemos!"</i>, ela afirma.</p> 
+                            <p>A Jú passava em média 4 horas por dia dentro do carro ao atravessar SP e chegar ao trabalho. Na época, por coincidência ou não, atuava na maior Incorporadora do Brasil em apartamentos compactos. Na gestão comercial ela se sentia desconexa do que vendia, por não viver essa liberdade em mobilidade.</p>
+                            <p>Resolveu assim fazer uma imersão estudando fora do Brasil, onde teve contato com diversas propostas de moradia e mobilidade urbana. Ao retornar, trouxe na bagagem essa vontade de fazer diferente, aliando sua experiência profissional às suas crenças pessoais, e desde 2018 a Lounge.161 ajuda pessoas a reduzirem distâncias em deslocamento, facilitando o viver perto de tudo que faz sentido! Incentiva pessoas a terem um olhar para dentro de si e assim carregarem apenas o que de fato é delas, fazendo com que os tamanhos dos apês se tornem exatos à sua própria verdade.</p>
+                            <p>Hoje ela Vive Compacto em um Apê de 45 m² com seu Pet (o Noah, um Husky Siberiano), e à frente da Lounge.161, reinventa seu próprio mundo e entusiasma todos a serem mais vivendo em menos m².</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>`);
+        $(".sobre-bloco4").after(`
+        <section class="sobre-bloco5">
+        <div>
+        <div class="container">
+            <h3 class="title-bancos-h1 roxo" style="position: relative; top: 50px;"> Localização </h3>
+            <div class="maps" style="width:45%;border:1px solid #5e17eb; float:left; margin-bottom:50px;border-radius: 20px">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14623.92507621187!2d-46.6608874!3d-23.6050047!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57e06d102f4b%3A0x2bd9dd29f01d8eff!2sTetrys!5e0!3m2!1spt-BR!2sbr!4v1623976516240!5m2!1spt-BR!2sbr" width="100%" height="350px" style="border-radius:20px; border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="maps-text" style="margin-left: 20px;width:49%;height: 80%;float:left; margin-top: 40px">
+                <p class="destaque" style="color:#5e17eb; font-weight: bold; margin-bottom:40px; font-size: 40px;margin-left: 30px;">
+                    Unidade Vila Pompeia
+                </p>
+                <p class="item" style="color:#3c3939; font-weight: 400; font-size: 30px;line-height:38px; margin-left: 30px;">
+                    Rua Doutor Augusto de Miranda <br>
+                    Nº 800 - Apê 202 - Ed. Tetrys
+                </p>
+                <p class="item" style="color:#3c3939; font-weight: 400; font-size: 30px;margin-left: 30px;margin-top:30px;">
+                    Vila Pompeia - São Paulo/SP
+                </p>
+            </div>
+        </div>
+    </div>
+        </section>`);
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".widget-form-request-property").after(`
+        <section class="encomende-bloco1">
+            <div class="container background">
+                <div class="row" style="margin-top:-40px;">
+                    <div class="ingaia-capital-template">
+                        <div class="col-md-12 margin">
+                            <h1 class="title-bancos-h1 roxo">Encontraremos seu Apê!</h1>                    
+                            <div class="col-md-8 content-div-text">
+                            <p class="sobre-texto">Nós da Lounge.161 ajudamos você a encontrar o seu Apê Compacto em poucos dias.</p>
+                            <p class="sobre-texto"><span>Após preencher o formulário, vamos te conhecer melhor e te encaminhar 3 opções de Apês que darão Match com você!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>`);
+        $(".encomende-bloco1").after(`
+        <section class="encomende-bloco2"> 
+        <div class="col-md-12 itens-cadastro" style="background-color:#5e17eb;">
+            <div class="col-md-4 img-holder">
+                <img src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/0458ab4a3a19fad8092c5824d4f977fc-encomende1.png" />
+                    <h3>O tamanho ideal para você</h3>
+            </div>
+            <div class="col-md-4 img-holder">
+                <img src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/7532ed30f24173ae2c67679ad586dcd0-encomende2.png" />
+                    <h3>Áreas comuns são a extensão do seu Apê</h3>
+            </div>
+            <div class="col-md-4 img-holder">
+                <img src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/3ac841f322d84c895d09b7e66af02cd9-encomende3.png" />
+                    <h3>Perto de tudo que faz sentido para você</h3>
+            </div>
+        </div>
+        <div class="col-md-12 itens-cadastro" style="background-color:#5e17eb;">
+            <div class="col-md-4 img-holder">
+                <img src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/b3bc4dc02b2b0e02ba5b3c7d379b5107-encomende4.png" />
+                    <h3>Alta rentabilidade e liquidez</h3>
+            </div>
+            <div class="col-md-4 img-holder">
+                <img src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/4083aa8ebd42711c13e0b093cca63a3c-encomende5.png" />
+                    <h3>Menor despesa com seu Apê</h3>
+            </div>
+            <div class="col-md-4 img-holder">
+                <img src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/825fb60b5845d5567eff41412b575656-encomende6.png" />
+                    <h3>Metrô/Ônibus sempre perto</h3>
+            </div>
+        </div>
+        </section>`);
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        document.querySelector("#internal div .widget-form-request-property .form-request-property-template h1").classList.add("title-encomende-principal");
+        var title = document.getElementsByClassName('title-encomende-principal');
+        title[0].innerHTML = 'Seu pedido é uma ordem!';
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+    
+        $(".title-encomende-principal").after(`
+    <h2>Sem tempo para procurar o seu Apê Compacto?</h2>
+    <h3>Descreva abaixo o seu Compacto ideal:<h3>
+    `)
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        document.querySelector("#internal div .widget-form-request-property .form-request-property legend").classList.add("title-encomende-seu-imovel");
+        var title = document.getElementsByClassName('title-encomende-seu-imovel');
+        title[0].innerHTML = 'Trazemos o seu Apê em poucos cliques';
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".widget-form-custom").before(`
+        <section class="kit-bloco1">
+            <div class="container background">
+                <div class="row" style="margin-top:-40px;">
+                    <div class="ingaia-capital-template">
+                        <div class="col-md-12 margin">
+                        <img class="kit-bg" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/85e78cd31cd2fbfb5323584f2b279557-kit-bg.png">
+                        <img class="kit-bg-mobile" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/3e98daa22b4a548a7cceee5ca811be82-novo-kit-decora%C3%A7%C3%A3o-mobile.png">
+                            <h1 class="kit-h1"><span>Hey you!</span> Receba</h1>                  
+                            <h1 class="kit-h1-b">seu Apê mobiliado e</h1>
+                            <h1 class="kit-h1-c">decorado pela L.161</h1>  
+                            <div class="col-md-8 content-div-text">
+                            <h2 class="kit-h2">Com projetos descomplicados reinventamos o seu jeito de morar!</h2>
+                            <a class="btn-hover" href="https://wa.me/5511991153327?&text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20a%20decoração%20do%20Apê" target="_blank"><p class="kit-title-p"><span>Entre em contato ></span></p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>`);
+        $(".kit-bloco1").after(`
+        <section class="kit-bloco2" style="background-color:#fff;">
+            <div class="container background">
+                <div class="row ">
+                    <div class="ingaia-capital-template">
+                        <div class="col-md-12 margin">
+                            <h1 class="title-bancos-h1 white">Por que decorar meu Apê Compacto?</h1>
+                            <div class="alinhamento">                    
+                                <div class="col-md-8 content-div-text">
+                                    <img class="fr-dib fr-draggable img-num" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/488794ff49beebb01a313281a3a005d1-num1kit.png" style="width: 60px;">
+                                </div>
+                                <p class="sobre-texto">Para Investidores</p>
+                                <p class="sobre-links">O projeto de decoração traz uma vantagem competitiva na hora de
+                                alugar ou revender o seu Apê. Pensamos em uma estética moderna
+                                com funcionalidade para otimização de cada espaço.<p>
+                            </div>
+    
+                            <div class="alinhamento">                    
+                                <div class="col-md-8 content-div-text">
+                                    <img class="fr-dib fr-draggable img-num" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/a2c504a86d9f58211ce3a34e42bddc88-num2kit.png" style="width: 60px;">
+                                </div>
+                                <p class="sobre-texto">Para moradores</p>
+                                <p class="sobre-links">O projeto de decoração deixará o seu Apê Compacto com a sua cara!
+                                Não trabalhamos com padrões, mas com o que funciona pra você.
+                                Pensamos em como otimizar o espaço para que o seu lar fique
+                                aconchegante e funcional.<p>
+                            </div>
+    
+                            <div class="alinhamento">                    
+                                <div class="col-md-8 content-div-text">
+                                    <img class="fr-dib fr-draggable img-num" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/2af58c933db268351b53512c3a0b4ed5-num3kit.png" style="width: 60px;">
+                                </div>
+                                <p class="sobre-texto">Para todos</p>
+                                <p class="sobre-links">Ajudamos na elaboração completa da reforma/decoração do
+                                seu Apê Compacto auxiliando a locação e venda com
+                                rentabilidade<p>
+                            </div>
+    
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>`);
+        $(".kit-bloco2").after(`
+        <section class="kit-bloco3" style="background-color:#5e17eb;">
+            <div class="container background">
+                <div class="row ">
+                    <div class="ingaia-capital-template decorado">
+                        <div class="col-md-12 margin">
+<div class="icon_loungers first_item_arrow" style="position:absolute;left:-50px;"> 
+                    <button style="color: #5e17eb; margin-top:18px;margin-left:-5px;font-size: 55px;z-index:999;" onclick="plusSlides(-1)">&lt;<p></p>
+                </button></div>
+                        <figure class="col-md-8 content-div-text">
+                        <img class="fr-dib fr-draggable img-num" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/ee07401a941b147aa76a12fb3d6b64fe-foto-ape.png" style="width: 100%;">
+                        <figcaption class="title">- Apartamento localizado no</figcaption>
+                        <figcaption class="title2">Tetrys Pompéia, São Paulo- SP.</figcaption>
+                        <figcaption class="texto">Decorados por Nischi Arquitetura</figcaption>
+                        <a href="#form-contato"><figcaption class="btn-decor">Quero decorar meu Compacto ></figcaption></a>
+                        </figure>
+<div class="icon_loungers last_item_arrow" style="position:absolute;right:0;">
+                    <button style="color: #5e17eb; margin-top: 20px;margin-left:5px;font-size: 55px;" onclick="plusSlides(1)">&gt;<p></p>
+                </button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>`);
+        $(".kit-bloco3").after(`
+        <section class="kit-bloco4" style="background-color:#fff;">
+            <div class="container background">
+                <div class="row ">
+                    <div class="ingaia-capital-template">
+                        <div class="col-md-12 margin">
+                            <h1 class="title-bancos-h1 roxo">Benefícios de Decorar com a Lounge.161</h1>
+                            <p>Oferecemos um serviço completo do começo ao fim da
+                            decoração. Nossos parceiros arquitetos e engenheiros são
+                            responsáveis por tudo, entregando o seu Apê Compacto como
+                            combinado. <span>Veja os benefícios abaixo:</span></p>
+                            <a href="#form-contato"><p class="btn-decor">Quero fazer um orçamento &gt;</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>`);
+        $(".kit-bloco4").after(`
+        <section class="kit-bloco5" style="background-color:#fff;">
+            <div class="container background">
+                <div class="row ">
+                    <div class="bloco-beneficios">
+                        <p>- Você não precisa se preocupar com nada. A única
+                        preocupação que você vai ter será chamar a nossa
+                        equipe para o Open House quando a obra acabar!</p>
+                        <p>- Orçamento fechado para decoração.</p>
+                        <p>- Acompanhamento da obra via app.</p>
+                        <p>- Cuidamos dos processos pesados, detalhes e
+                        instalações.</p>
+                        <p>- Equipe de marceneiros, marmoraria, vidraçaria
+                        e serralheria.</p>
+                        <p>- Nosso objetivo é entregar tudo no prazo combinado.</p>
+                        <img class="fr-dib fr-draggable img-right" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/aab6efc724b0f59e6b6b94d0c1373a20-phone-boy.png" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </section`);
+        $(".kit-bloco5").after(`
+        <section class="kit-bloco6" style="background-color:#fff;">
+            <div class="container background">
+                <div class="row ">
+                    <div class="bloco-beneficios">
+                        <img class="fr-dib fr-draggable img-left" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/d2e7ea968659868e054c0d49c6295683-menina-kit.png" style="width: 100%;">
+                        <h1 class="title-bancos-h1 roxo">Tipos de decoração</h1>
+                        <div class="tipos">
+                               <div class="bloco1">
+                        <img class="p-img" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/54495ea21c66c220dce837c13aba92f9-tipodecor1.png">
+                        <p class="bloco-text">Ótima para investidores que desejam deixar o Apê
+                        pronto para alugar ou vender. Praticidade e agilidade.</p>
+                        </div>
+                        <div class="bloco2">
+                        <img class="p-img" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/ba44ae7b42ee5c810b0ab5dcaf77514b-tipodecor2.png">
+                        <p class="bloco-text">Perfeito para quem quer o Apê pensado e pronto em
+                        poucos dias para sua mudança. Facilidade e
+                        autenticidade.</p>
+                        </div>
+                        <div class="bloco3">
+                        <img class="p-img" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/b924ec74445440bd218f778a3e2fc182-tipodecor3.png">
+                        <p class="bloco-text">Está buscando a decoração perfeita? Então, vamos tirar
+                        esse sonho do papel com você, detalhe por detalhe.
+                        A sua personalidade alinhada à funcionalidade do
+                        seu Apê. Leveza e sofisticação!</p>
+    
+    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section`);
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        document.querySelector("#internal div .widget-form-custom h1").classList.add("title-kit-decoracao");
+        var title = document.getElementsByClassName('title-kit-decoracao');
+        title[0].innerHTML = 'Fornecedores e parceiros';
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".title-kit-decoracao").after(`
+    <h2 class="subtitle-kit-decoracao">Deixe aqui seus dados para entrarmos em contato.</h2>
+    `)
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $("#internal div .widget-form-custom .box-inner .row .form-custom").after(`
+    <p id="form-contato" class="p-form-kit-decoracao">Preencha com seus dados:</p>
+    `)
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        document.querySelector("#internal .widget-form-add-listing h1").classList.add("title-cadastre-seu-imovel");
+        var title = document.getElementsByClassName('title-cadastre-seu-imovel');
+        title[0].innerHTML = 'Cadastre seu Apê Compacto';
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".widget-form-add-listing .container").before(`
+            <div><img class="lustre-bg" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/85cf7a2b499ef03156567646c7a27f62-bg-lustre.png"></div>`)
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".widget-form-add-listing .container").before(`
+            <div><img class="cadastro-bg" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/6258447e1e55c042a1a646dc23152f6f-bg-cadastro.png"></div>`)
+    }, false);
+    
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".widget-form-add-listing .container").before(`
+            <div><img class="cadastro-bg-mobile" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/740a83a8852d2a9a750861c052b9e887-cadastre-bg-mobile.png"></div>`)
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".widget-form-add-listing").after(`
+        <section class="cadastre-bloco1">
+            <div class="container background">
+                <div class="row">
+                    <div class="ingaia-capital-template">
+                        <div class="col-md-12 margin">
+                            <h1 class="cadastre-h1 roxo">Traga seu Apê Compacto para a Lounge.161</h1>
+                            <p class="chamada"><span>Quer vender ou alugar o seu Apê Compacto?</span> Então, pode deixar com a gente da Lounge.161, afinal por aqui somos especializados em viver compacto! Nós aproximamos os futuros Loungers do seu Apê!</p>
+                            <p class="chamada">Após o preenchimento dos dados acima, vamos avaliar se o seu imóvel entra no padrão do compacto que trabalhamos. Depois disso, um de nossos especialistas entrará em contato com você para explicar as condições e então anunciaremos o
+                            seu apê em todas as plataformas digitais.</p>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>`);
+        $(".cadastre-bloco1").after(`
+        <section class="cadastro-bloco2">
+            <div class="col-md-12 itens-cadastro" style="background-color:#5e17eb;">
+                                <div class="col-md-4 img-holder">
+                                    <img src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/297977078e15a2f598282de4dc07a7d9-item1-cadastro.png" />
+                                    <h3>Imobiliária
+                                    especializada em
+                                    Apês Compactos</h3>
+                                </div>
+                                <div class="col-md-4 img-holder">
+                                    <img src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/1ca9197e44683eff98cbc3bd7c191699-item2-cadastro.png">
+                                    <h3>Cartela de clientes
+                                    que estão procurando
+                                    Apês iguais ao seu</h3>
+                                </div>
+                                <div class="col-md-4 img-holder">
+                                    <img src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/4c2b221835f7327a8b812da3daa46899-item3-cadastro.png">
+                                    <h3>Anúncios em nosso
+                                    site e em outras
+                                    plataformas de venda</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-12 itens-cadastro" style="background-color:#5e17eb;">
+                                <div class="col-md-4 img-holder">
+                                    <img src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/6263261976e7cfb43dfdb9f7bc421622-imgb1.png" />
+                                    <h3>Ajudamos em
+                                    todo o processo de
+                                    venda e locação</h3>
+                                </div>
+                                <div class="col-md-4 img-holder">
+                                    <img src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/19e8f51ec0ab3b7b42514b9bd41d79c5-imgb2.png">
+                                    <h3 class="padding">Atendimento personalizado
+                                    por profissionais
+                                    especializados</h3>
+                                </div>
+                                <div class="col-md-4 img-holder">
+                                    <img src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/786ee49937012551d10b38aedba07f8b-imgb3.png">
+                                    <h3>Você satisfeito
+                                    com a rentabilidade
+                                    do seu Apê</h3>
+                                </div>
+                            </div>
+            </section>`);
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $("#internal .widget-form-contact .form-contact-template .contact-form .form-contact").before(`<p class="fale-chamada">Preencha com seus dados:</p>`)
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $("#internal .widget-form-contact .container").before(`
+            <div><img class="fale-conosco-bg" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/794205adfc8f14f069e85130830f3d3a-fale-conosco-bg.png"><img class="fale-conosco-bg-mobile" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/e4a8de25de448bf26da0b5ef5126f894-novo-Fale-conosco-Mobile.png"></div>`)
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $("#internal .widget-form-contact").after(`
+        <section class="fale-bloco-2">
+            <div class="container background">
+                <div class="row ">
+                    <div class="ingaia-capital-template">
+                        <div class="col-md-12 margin">
+                            <h1 class="title-bancos-h1 white title-telefone">Telefones</h1>
+                            <div class="bloco-tel">                    
+                                <a href="https://api.whatsapp.com/send?phone=5511991153327" target="_blank" class="sobre-tel"><img class="img-whats" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/757fe1d6bdc48e00ff48910b837c1b5d-whatsapp-roxo-v2.png" style="width: 30px;">+55 (11) 99115-3327</a>
+                                <a href="https://api.whatsapp.com/send?phone=5511968436314" target="_blank" class="sobre-tel"><img class="img-whats" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/757fe1d6bdc48e00ff48910b837c1b5d-whatsapp-roxo-v2.png" style="width: 30px;">+55 (11) 96843-6314</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>`);
+        $(".fale-bloco-2").after(`
+        <section class="fale-bloco-3">
+        <div style="margin-top: 50px;">
+        <div class="container">
+            <h3 class="title-bancos-h1 roxo" style="position: relative; top: 10px; margin-left: 42%;"> Localização </h3>
+            <div class="maps" style="width:48%;height: 90%;float:left; border: 1px solid #5e17eb; border-radius: 20px">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14623.92507621187!2d-46.6608874!3d-23.6050047!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57e06d102f4b%3A0x2bd9dd29f01d8eff!2sTetrys!5e0!3m2!1spt-BR!2sbr!4v1623976516240!5m2!1spt-BR!2sbr" width="100%" height="350px" style="border:0;border-radius:20px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="maps-text" style="width:49%;height: 80%;float:left; margin-top: 40px">
+                <h3 style="color:#5e17eb; font-weight: bold; font-size: 34px;">
+                    Unidade Vila Pompeia
+                </h3>
+                <p style="color:#5e17eb; font-size: 28px;">
+                    Rua Doutor Augusto de Miranda <br>
+                    Nº 800 - Apê 202 - Ed. Tetrys
+                </p>
+                <p style="color:#5e17eb; font-size: 28px;">
+                    Vila Pompeia - São Paulo/SP
+                </p>
+            </div>
+        </div>
+    </div>
+        </section>`);
+    }, false);
+    window.addEventListener("DOMContentLoaded", function() {
+    $('section .form-group .cell').attr('placeholder', 'WhatsApp *');
+    }, false);
+
+window.addEventListener("DOMContentLoaded", function() {
+    $('.has-feedback .kenlo-filter-property:nth-child(1)').attr('placeholder', 'Descreva');
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+    $('.form-add-listing-template [name="usable_floor_area"]').attr('placeholder', 'Área útil/privativa *');
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+    $('#form-custom-diga-o-assunto-e-especifique-o-tipo-de-fornecedor-parceiro-ex-arquiteto-engenheiros-marceneiro-designer-de-interiores-vidraceiro-etc-field').attr('placeholder', 'Nos fale um pouco sobre você e especifique o tipo de fornecedor/parceiro (Ex.: arquiteto, engenheiro, marceneiro, designer de interiores, vidraceiro, etc.).*');
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+    $('.widget-form-request-property .form-request-property #comment').attr('placeholder', 'Ex: Meu Apê ideal é um Studio incrível, em um bairro perto de tudo... *');
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".bloco6-invest").after(`
+         <section class="bloco7-invest">
+        <div class="container background">
+            <div class="row">
+                <div class="ingaia-capital-template">
+                    <div class="col-md-12 margin">
+                        <h2 class="fale-conosco-h2">Fale conosco</h2>
+                        <div class="form-invest">
+                        <h3 class="form-h3" id="entre-em-contato">Preencha com seus dados:</h3>
+                            <form id="myform" method="post">
+                                <input type="text" id="nome" name="name" placeholder="Nome" />
+                                <input type="number" id="whatsapp" name="whats" placeholder="WhatsApp" min="0" max="11"/>
+                                <input type="email" id="email" name="email" placeholder="E-mail" />
+                                <select id="data-investimento">
+                                   <option value="" selected disabled hidden>Quando pretende investir?</option>
+                                   <option value="curto">Curto prazo</option>
+                                   <option value="medio">Médio prazo</option>
+                                   <option value="longo">Longo prazo</option>
+                                 </select>
+                                <input id="btn-invest" type="button" value="Enviar" onclick="sendEmail()">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>`);
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".widget-feedback").after(`<div class="container" style="background-color:#5e17eb; padding-top:80px;">
+                    <div>
+                        <div class="container" style="margin: 0 auto; width:80%;">
+                            <div class="row" style="align-itens: center;">
+                                <div>
+                                    <h1 class="title-bancos-h1 white feedback-h3">Os Loungers</h1>
+                                    <h3 class="white-feedback" style="font-weight:600;">Depoimentos de quem já se tornou um Lounger:</h3>
+                                    <div class="content-choices">
+                                        <div class="icon_loungers">
+                                            <button style="color: #5e17eb; margin-top: 20px;margin-left:-5px;font-size: 55px;" onclick="plusSlides(-1)">&lt;</p>
+                                        </div>
+                                        <div class="choices mySlides" style="display: block; height: 400px; width: 300px; border-radius: 20px; border-color: #5e17eb; border-style: solid; border-width: thin;  box-shadow: 0 0 1em gray;"><img style="width: 90px; margin-top:60px;" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/688f84665f56725936148600e2f41203-Foto%203.png" class="fr-dii fr-draggable feedback-img">
+                                            <p style="color: gray; width: 80%; margin-left: 30px; margin-top: 70px;">A compra mais descomplicada que já vivi. Desde o primeiro atendimento, senti o compromisso e a experiência da Lounge.161, o que me deixou muito segura</p>
+                                            <h4 style="color: gray; width: 80%; margin-left: 30px">Sibeli Martinez</h4>
+                                            <p class="p-feedback" style="color: gray; width: 90%; margin-left: 13px; margin-top: -20px;">Artista Plástica</p>
+                                        </div>
+                                        <div class="choices mySlides" style="height: 400px; width: 300px; border-radius: 20px; border-color: #5e17eb; border-style: solid; border-width: thin;  box-shadow: 0 0 1em gray;"><img style="width: 90px;" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/0d0a662f623d3bc997d4891b0411633b-Foto%202.png" class="fr-dii fr-draggable feedback-img">
+                                            <p style="color: gray; width: 80%; margin-left: 30px; margin-top: 70px;">A compra foi muito fácil. A Lounge me muniu de várias informações, o empreendimento é excelente, muito acima de outros que eu havia pesquisado.</p>
+                                            <h4 style="color: gray; width: 80%; margin-left: 30px">Simone Queiroz</h4>
+                                            <p class="p-feedback" style="color: gray; width: 90%; margin-left: 13px; margin-top: -20px;">Jornalista</p>
+                                        </div>
+                                        <div class="choices mySlides" style="height: 400px; width: 300px; border-radius: 20px; border-color: #5e17eb; border-style: solid; border-width: thin;  box-shadow: 0 0 1em gray;"><img style="width: 90px;" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/2afa5a081d04d522623f149fc2996399-Foto%201.png" class="fr-dii fr-draggable feedback-img">
+                                            <p style="color: gray; width: 80%; margin-left: 30px; margin-top: 70px;">A experiência excelente... Não tinha absolutamente nenhum conhecimento de como funcionava a logística de comprar um Compacto. Me ajudaram muito!!</p>
+                                            <h4 style="color: gray; width: 80%; margin-left: 30px">Dr. Victor Picchi</h4>
+                                            <p class="p-feedback" style="color: gray; width: 90%; margin-left: 13px; margin-top: -20px;">Médico</p>
+                                        </div>
+                                        <div class="icon_loungers">
+                                            <button style="color: #5e17eb; margin-top: 20px;margin-left:5px;font-size: 55px;" onclick="plusSlides(1)">></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>`)
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".bloco1-partner").after(`
+         <div class="bloco2-partner">
+         <div class="custom-margin">
+        <div class="container background">
+            <div class="row">
+                <div class="ingaia-capital-template">
+                    <div class="col-md-12 margin">
+                        <div class="form-invest">
+                        <h3 class="form-h3" id="entre-em-contato">Preencha com seus dados:</h3>
+                            <form id="myform-partner" method="post">
+                                <input type="text" id="nome" name="name" placeholder="Nome do(a) corretor(a)" />
+                                <input type="number" id="whatsapp" name="whats" placeholder="WhatsApp" min="0" max="11"/>
+                                <input type="email" id="email" name="email" placeholder="E-mail" />
+                                <input type="text" id="creci" name="creci" placeholder="CRECI" />
+                                <select id="experiencia">
+                                   <option value="" selected disabled hidden>Tem experiência com Compactos?</option>
+                                   <option value="Sim">Sim</option>
+                                   <option value="Não">Não</option>
+                                 </select>
+                                 <textarea id="story" name="story" rows="5" cols="33" placeholder="Pertence a alguma imobiliária: Se sim, qual?"></textarea>
+                                <input id="btn-invest" type="button" value="Enviar" onclick="sendEmail()">
+                            </form>
+    <img class="fr-dib fr-draggable fr-fil img-parceiro" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/2178530ad1129d82ce3e810406a5f9f8-PERSONAGEM_1.png" style="width: 300px;">
+    <img class="img-partner-mobile-bg" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/2235038c5fece51763a3f79fdfa7c8b7-partner-mobile.png">
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>`);
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".info-office").after(`
+         <div class="footer-lounge">
+    <img class="fr-dib fr-draggable logo-footer-img" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/4ce20296a958dd83651ee0c44aaf55af-logo-footer.png" style="width: 100px;">
+        <p>Todos os direitos reservados</p>
+         </div>
+         `);
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".bloco4-invest").after(`
+        <div class="bloco5-invest">
+        <div class="custom-margin">
+            <div class="container background">
+                <div class="row">
+                    <div class="ingaia-capital-template decorado">
+                        <div class="col-md-12 margin">
+    
+                            <h3 class="title-h3" id="opcoes">Aqui alguns exemplos reais para voc&ecirc;</h3>
+                            <div class="icon_loungers first_item_arrow" style="position:absolute;">
+                                <button style="color: #5e17eb; margin-top:0px;margin-left:-5px;font-size: 55px;z-index:999;" onclick="plusSlides(-1)">&lt;
+                                </button>
+                            </div>
+                            <figure class="col-md-8 content-div-text mySlides" style="display: block;"><img class="fr-dib fr-draggable img-num" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/58d0bcd1d3b2a3ce6bffe062238ef03f-1.png" style="width: 100%;">
+                                <figcaption class="title">- Tetrys Pomp&eacute;ia</figcaption>
+                                <figcaption class="title2">Localizado no bairro da Pomp&eacute;ia, S&atilde;o Paulo</figcaption>
+                                <div class="principal">
+                                    <div class="bloco1">
+                                        <figcaption class="title3">Rentabilidade</figcaption>
+                                        <figcaption class="title4">30,04%</figcaption>
+                                    </div>
+                                    <div class="bloco2">
+                                        <figcaption class="title3">Liquidez</figcaption>
+                                        <figcaption class="title4">40,00%</figcaption>
+                                    </div>
+                                    <div class="bloco3">
+                                        <figcaption class="title3">Tempo rent&aacute;vel</figcaption>
+                                        <figcaption class="title4">1 ano</figcaption>
+                                    </div>
+                                </div>
+                                <a href="https://wa.me/5511991153327?&text=Olá,%20quero%20conversar%20com%20um%20especialista%20sobre%20investimentos" target="_blank">
+                                    <figcaption class="btn-decor">Converse com um especialista para saber mais &gt;</figcaption>
+                                </a>
+                            </figure>
+                            <figure class="col-md-8 content-div-text mySlides"><img class="fr-dib fr-draggable img-num" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/db98321fc1ad9bfe7393e0c07a3f2212-2.png" style="width: 100%;">
+                                <figcaption class="title">- W/L</figcaption>
+                                <figcaption class="title2">Localizado no bairro da Vila Romana, S&atilde;o Paulo</figcaption>
+                                <div class="principal">
+                                    <div class="bloco1">
+                                        <figcaption class="title3">Valorização</figcaption>
+                                        <figcaption class="title4">25-40%</figcaption>
+                                    </div>
+                                    <div class="bloco2">
+                                        <figcaption class="title3">Liquidez</figcaption>
+                                        <figcaption class="title4">-</figcaption>
+                                    </div>
+                                    <div class="bloco3">
+                                        <figcaption class="title3">Tempo rent&aacute;vel</figcaption>
+                                        <figcaption class="title4">-</figcaption>
+                                    </div>
+                                </div>
+                                <a href="https://wa.me/5511991153327?&text=Olá,%20quero%20conversar%20com%20um%20especialista%20sobre%20investimentos" target="_blank">
+                                    <figcaption class="btn-decor">Converse com um especialista para saber mais &gt;</figcaption>
+                                </a>
+                            </figure>
+                            <figure class="col-md-8 content-div-text mySlides"><img class="fr-dib fr-draggable img-num" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/27f5e88918ba6508259466011098a869-3.png" style="width: 100%;">
+                                <figcaption class="title">- Nine 3134</figcaption>
+                                <figcaption class="title2">Localizado no bairro do Jardins, S&atilde;o Paulo</figcaption>
+                                <div class="principal">
+                                    <div class="bloco1">
+                                        <figcaption class="title3">Rentabilidade</figcaption>
+                                        <figcaption class="title4">4,306% /mês</figcaption>
+                                    </div>
+                                    <div class="bloco2">
+                                        <figcaption class="title3">Liquidez</figcaption>
+                                        <figcaption class="title4">-</figcaption>
+                                    </div>
+                                    <div class="bloco3">
+                                        <figcaption class="title3">Taxa de Ocupação</figcaption>
+                                        <figcaption class="title4">75%</figcaption>
+                                    </div>
+                                </div>
+                                <a href="https://wa.me/5511991153327?&text=Olá,%20quero%20conversar%20com%20um%20especialista%20sobre%20investimentos" target="_blank">
+                                    <figcaption class="btn-decor">Converse com um especialista para saber mais &gt;</figcaption>
+                                </a>
+                            </figure>
+                            <figure class="col-md-8 content-div-text mySlides"><img class="fr-dib fr-draggable img-num" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/d52b535fe9e4069cc78f8e6bf4df9723-4.png" style="width: 100%;">
+                                <figcaption class="title">- Nik Perdizes</figcaption>
+                                <figcaption class="title2">Localizado no bairro da Perdizes, S&atilde;o Paulo</figcaption>
+                                <div class="principal">
+                                    <div class="bloco1">
+                                        <figcaption class="title3">Rentabilidade</figcaption>
+                                        <figcaption class="title4">11,17% /ano</figcaption>
+                                    </div>
+                                    <div class="bloco2">
+                                        <figcaption class="title3">Liquidez</figcaption>
+                                        <figcaption class="title4">-</figcaption>
+                                    </div>
+                                    <div class="bloco3">
+                                        <figcaption class="title3">Taxa de Ocupação</figcaption>
+                                        <figcaption class="title4">92%</figcaption>
+                                    </div>
+                                </div>
+                                <a href="https://wa.me/5511991153327?&text=Olá,%20quero%20conversar%20com%20um%20especialista%20sobre%20investimentos" target="_blank">
+                                    <figcaption class="btn-decor">Converse com um especialista para saber mais &gt;</figcaption>
+                                </a>
+                            </figure>
+                            <figure class="col-md-8 content-div-text mySlides"><img class="fr-dib fr-draggable img-num" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/ef2a4834bfd54db960531b1d3ba2909d-5.png" style="width: 100%;">
+                                <figcaption class="title">- On Jurupis</figcaption>
+                                <figcaption class="title2">Localizado no bairro de Moema, S&atilde;o Paulo</figcaption>
+                                <div class="principal">
+                                    <div class="bloco1">
+                                        <figcaption class="title3">Rentabilidade</figcaption>
+                                        <figcaption class="title4">4,786% /mês</figcaption>
+                                    </div>
+                                    <div class="bloco2">
+                                        <figcaption class="title3">Liquidez</figcaption>
+                                        <figcaption class="title4">-</figcaption>
+                                    </div>
+                                    <div class="bloco3">
+                                        <figcaption class="title3">Valorização</figcaption>
+                                        <figcaption class="title4">7,19% /ano</figcaption>
+                                    </div>
+                                </div>
+                                <a href="https://wa.me/5511991153327?&text=Olá,%20quero%20conversar%20com%20um%20especialista%20sobre%20investimentos" target="_blank">
+                                    <figcaption class="btn-decor">Converse com um especialista para saber mais &gt;</figcaption>
+                                </a>
+                            </figure>
+                            <figure class="col-md-8 content-div-text mySlides"><img class="fr-dib fr-draggable img-num" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/4c64f0a099d6e55e327abba77c3ca02a-6.png" style="width: 100%;">
+                                <figcaption class="title">- Diy</figcaption>
+                                <figcaption class="title2">Localizado no bairro da Bela Vista, S&atilde;o Paulo</figcaption>
+                                <div class="principal">
+                                    <div class="bloco1">
+                                        <figcaption class="title3">Rentabilidade</figcaption>
+                                        <figcaption class="title4">17% /ano</figcaption>
+                                    </div>
+                                    <div class="bloco2">
+                                        <figcaption class="title3">Liquidez</figcaption>
+                                        <figcaption class="title4">-</figcaption>
+                                    </div>
+                                    <div class="bloco3">
+                                        <figcaption class="title3">Tempo rent&aacute;vel</figcaption>
+                                        <figcaption class="title4">-</figcaption>
+                                    </div>
+                                </div>
+                                <a href="https://wa.me/5511991153327?&text=Olá,%20quero%20conversar%20com%20um%20especialista%20sobre%20investimentos" target="_blank">
+                                    <figcaption class="btn-decor">Converse com um especialista para saber mais &gt;</figcaption>
+                                </a>
+                            </figure>
+                            <figure class="col-md-8 content-div-text mySlides"><img class="fr-dib fr-draggable img-num" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/0d7f733b8c69d5c95e20f149bc1b2444-7.png" style="width: 100%;">
+                                <figcaption class="title">- Spin</figcaption>
+                                <figcaption class="title2">Localizado no bairro da Perdizes, S&atilde;o Paulo</figcaption>
+                                <div class="principal">
+                                    <div class="bloco1">
+                                        <figcaption class="title3">Rentabilidade</figcaption>
+                                        <figcaption class="title4">3,500 /mês</figcaption>
+                                    </div>
+                                    <div class="bloco2">
+                                        <figcaption class="title3">Liquidez</figcaption>
+                                        <figcaption class="title4">-</figcaption>
+                                    </div>
+                                    <div class="bloco3">
+                                        <figcaption class="title3">Taxa de Ocupação</figcaption>
+                                        <figcaption class="title4">78%</figcaption>
+                                    </div>
+                                </div>
+                                <a href="https://wa.me/5511991153327?&text=Olá,%20quero%20conversar%20com%20um%20especialista%20sobre%20investimentos" target="_blank">
+                                    <figcaption class="btn-decor">Converse com um especialista para saber mais &gt;</figcaption>
+                                </a>
+                            </figure>
+                            <figure class="col-md-8 content-div-text mySlides"><img class="fr-dib fr-draggable img-num" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/a8ecfae269b689f1da27c98f04c6856b-8.png" style="width: 100%;">
+                                <figcaption class="title">- Today Pinheiros</figcaption>
+                                <figcaption class="title2">Localizado no bairro de Pinheiros, S&atilde;o Paulo</figcaption>
+                                <div class="principal">
+                                    <div class="bloco1">
+                                        <figcaption class="title3">Rentabilidade</figcaption>
+                                        <figcaption class="title4">4,306 /mês%</figcaption>
+                                    </div>
+                                    <div class="bloco2">
+                                        <figcaption class="title3">Liquidez</figcaption>
+                                        <figcaption class="title4">-</figcaption>
+                                    </div>
+                                    <div class="bloco3">
+                                        <figcaption class="title3">Taxa de Ocupação</figcaption>
+                                        <figcaption class="title4">72%</figcaption>
+                                    </div>
+                                </div>
+                                <a href="https://wa.me/5511991153327?&text=Olá,%20quero%20conversar%20com%20um%20especialista%20sobre%20investimentos" target="_blank">
+                                    <figcaption class="btn-decor">Converse com um especialista para saber mais &gt;</figcaption>
+                                </a>
+                            </figure>
+                            <figure class="col-md-8 content-div-text mySlides"><img class="fr-dib fr-draggable img-num" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/30d65e86f51da9fdf62890d49d405873-9.png" style="width: 100%;">
+                                <figcaption class="title">- Viva Benx Pompéia</figcaption>
+                                <figcaption class="title2">Localizado no bairro da Pomp&eacute;ia, S&atilde;o Paulo</figcaption>
+                                <div class="principal">
+                                    <div class="bloco1">
+                                        <figcaption class="title3">Rentabilidade</figcaption>
+                                        <figcaption class="title4">0,7% /mês</figcaption>
+                                    </div>
+                                    <div class="bloco2">
+                                        <figcaption class="title3">Liquidez</figcaption>
+                                        <figcaption class="title4">-</figcaption>
+                                    </div>
+                                    <div class="bloco3">
+                                        <figcaption class="title3">Tempo rent&aacute;vel</figcaption>
+                                        <figcaption class="title4">-</figcaption>
+                                    </div>
+                                </div>
+                                <a href="https://wa.me/5511991153327?&text=Olá,%20quero%20conversar%20com%20um%20especialista%20sobre%20investimentos" target="_blank">
+                                    <figcaption class="btn-decor">Converse com um especialista para saber mais &gt;</figcaption>
+                                </a>
+                            </figure>
+                            <figure class="col-md-8 content-div-text mySlides"><img class="fr-dib fr-draggable img-num" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/9da338ca1b510e49f650fb01c69b1237-10.png" style="width: 100%;">
+                                <figcaption class="title">- Viva Benx Pompéia</figcaption>
+                                <figcaption class="title2">Localizado no bairro da Pomp&eacute;ia, S&atilde;o Paulo</figcaption>
+                                <div class="principal">
+                                    <div class="bloco1">
+                                        <figcaption class="title3">Rentabilidade</figcaption>
+                                        <figcaption class="title4">0,7% /mês</figcaption>
+                                    </div>
+                                    <div class="bloco2">
+                                        <figcaption class="title3">Liquidez</figcaption>
+                                        <figcaption class="title4">-</figcaption>
+                                    </div>
+                                    <div class="bloco3">
+                                        <figcaption class="title3">Tempo rent&aacute;vel</figcaption>
+                                        <figcaption class="title4">-</figcaption>
+                                    </div>
+                                </div>
+                                <a href="https://wa.me/5511991153327?&text=Olá,%20quero%20conversar%20com%20um%20especialista%20sobre%20investimentos" target="_blank">
+                                    <figcaption class="btn-decor">Converse com um especialista para saber mais &gt;</figcaption>
+                                </a>
+                            </figure>
+                            <figure class="col-md-8 content-div-text mySlides"><img class="fr-dib fr-draggable img-num" src="https://cdn1.valuegaia.com.br/gaiasite/48058/media/6fcb0a7f0b159762fd66e19790ec2fb3-11.png" style="width: 100%;">
+                                <figcaption class="title">- Viva Benx Pinheiros</figcaption>
+                                <figcaption class="title2">Localizado no bairro de Pinheiros, São Paulo</figcaption>
+                                <div class="principal">
+                                    <div class="bloco1">
+                                        <figcaption class="title3">Rentabilidade</figcaption>
+                                        <figcaption class="title4">0,9% /mês</figcaption>
+                                    </div>
+                                    <div class="bloco2">
+                                        <figcaption class="title3">Liquidez</figcaption>
+                                        <figcaption class="title4">-</figcaption>
+                                    </div>
+                                    <div class="bloco3">
+                                        <figcaption class="title3">Tempo rent&aacute;vel</figcaption>
+                                        <figcaption class="title4">-</figcaption>
+                                    </div>
+                                </div>
+                                <a href="https://wa.me/5511991153327?&text=Olá,%20quero%20conversar%20com%20um%20especialista%20sobre%20investimentos" target="_blank">
+                                    <figcaption class="btn-decor">Converse com um especialista para saber mais &gt;</figcaption>
+                                </a>
+                            </figure>
+                            <div class="icon_loungers last_item_arrow" style="position:absolute;right:0;">
+                                <button style="color: #5e17eb; margin-top:0px;margin-left:5px;font-size: 55px;" onclick="plusSlides(1)">&gt;
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        `)
+    }, false);
+    
+    window.addEventListener("DOMContentLoaded", function() {
+        $(".box-banks").after(`
+        <p>Simulação grátis em poucos minutos, <a href="https://wa.me/5511991153327?&text=Olá%20a%20Lounge.161%20faz%20a%20simulação%20do%20seu%20Apê%20em%20poucos%20minutos" target="_blank">clique aqui</a></p>
+         </div>
+         `);
+    }, false);
+    
+    </script>
+    <script>
+    function sendEmail(){
+          Email.send({
+              SecureToken : "affa0972-0b73-4cc4-97fe-2520b52472af",  
+              To : 'wilsonafs@hotmail.com',
+              From : "wilsonafs@hotmail.com",
+              Subject : "Mensagem do site - Investidor",
+              Body : `<html><body><h2>Dados da mensagem:</h2></br></br><p>${document.getElementById("nome").value}</p></br><p>${document.getElementById("whatsapp").value}</p></br><p>${document.getElementById("email").value}</p></br><p>${document.getElementById("resposta").value}</p></body></html>`
+          }).then(
+            message => alert("Mensagem enviada com sucesso")
+          );
+    }
+    </script>
+    
+    <script>
+    function sendEmail(){
+          Email.send({
+              SecureToken : "affa0972-0b73-4cc4-97fe-2520b52472af",  
+              To : 'wilsonafs@hotmail.com',
+              From : "wilsonafs@hotmail.com",
+              Subject : "Mensagem do site - Quero receber novidades",
+              Body : `<html><body><h2>Dados da mensagem:</h2></br></br><p>${document.getElementById("whatsapp").value}</p></br><p>${document.getElementById("email").value}</p></body></html>`
+          }).then(
+            message => alert("Mensagem enviada com sucesso")
+          );
+    }
+    </script>
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+        if (!isNaN(n)) {
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            if (slides[slideIndex-1] !== undefined) {
+                slides[slideIndex-1].style.display = "block";
+            }
+        }
+    }
+    
+    </script>
